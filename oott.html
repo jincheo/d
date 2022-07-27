@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MY BLOG</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".outer-menu-item").hover(
+          function () {
+            $(this).find(".inner-menu").show();
+          },
+          function () {
+            $(this).find(".inner-menu").hide();
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header id="main-header">
+        <hgroup>
+          <h1 class="master-title">경력</h1>
+          <h2 class="master-description">SW KMU&YM</h2>
+        </hgroup>
+        <nav id="main-navigation">
+          <div class="pull-left">
+            <ul class="outer-menu">
+              <li class="outer-menu-item">
+                <span class="menu-title">돌아가기</span>
+                <ul class="inner-menu">
+                  <li class="inner-menu-item"><a href="index.html">돌아가기</a></li>
+                  </li>
+                </ul>
+              </li>
+              <li class="outer-menu-item">
+                <span class="menu-title">춘향전</span>
+              </li>
+              <li class="outer-menu-item">
+                <span class="menu-title">피로 물든 우정</span>
+              </li>
+              <li class="outer-menu-item">
+                <span class="menu-title">LOVE DIVE</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pull-right">
+            <div class="search-bar">
+              <form>
+                <input type="text" class="input-search" />
+                <input
+                  type="submit"
+                  class="input-search-submit"
+                  value="Search"
+                />
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div id="content">
+        <section id="main-section">
+          <article>
+            <div class="article-header">
+              <h1 class="article-title">요약</h1>
+              <p class="article-date">2022년07월27일</p>
+            </div>
+            <div class="article-body">
+              <img src="https://i.ytimg.com/vi/lMK4K0fpPXo/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDs1b264vYXKvDWfopLEGMoztyVug" />
+              <p>2018년 춘향전 뮤지컬 연출</p>
+              <p>2021년 피로 물든 우정 뮤지컬 연출</p>
+              <p>2021년 통합사회 2학기 부장</p>
+              <p>2022년 YMCC 부원</p>
+              <p>2022년 LOVE DIVE 뮤직비디오 연출</p>
+            </div>
+          </article>
+        </section>
+      </div>
+      <footer id="main-footer">
+        <a href="https://github.com/woonsango">Created By 최선우</a>
+      </footer>
+    </div>
+  </body>
+</html>

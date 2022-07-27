@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MY SITE</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".outer-menu-item").hover(
+          function () {
+            $(this).find(".inner-menu").show();
+          },
+          function () {
+            $(this).find(".inner-menu").hide();
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header id="main-header">
+        <hgroup>
+          <h1 class="master-title"> Introduction</h1>
+          <h2 class="master-description">SW KMU&YM</h2>
+        </hgroup>
+        <nav id="main-navigation">
+          <div class="pull-left">
+            <ul class="outer-menu">
+              <li class="outer-menu-item">
+                <span class="menu-title">프로필</span>
+                <ul class="inner-menu">
+                  <li class="inner-menu-item">
+                    <a href="oott.html">경력</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="outer-menu-item">
+                <span class="menu-title">관심분야</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pull-right">
+            <div class="search-bar">
+              <form>
+                <input type="text" class="input-search" />
+                <input
+                  type="submit"
+                  class="input-search-submit"
+                  value="Search"
+                />
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div id="content">
+        <section id="main-section">
+          <article>
+            <div class="article-header">
+              <h1 class="article-title">소개</h1>
+            </div>
+            <div class="article-body">
+              <h2><p style="text-align: center;"></p></h2>
+              <div class="slider">
+                <input type="radio"name="slide"id="slide1"checked>
+                <input type="radio"name="slide"id="slide2">
+                <input type="radio"name="slide"id="slide3">
+                <input type="radio"name="slide"id="slide4">
+                <ul id="imgholder" class="imgs">
+                  <li><img src="slide1.jpg"></li>
+                  <li><img src="slide2.jpg"></li>
+                  <li><img src="slide3.jpg"></li>
+                  <li><img src="slide4.png"></li>
+                </ul>
+                <div class="bullets">
+                  <label for="slide1">&nbsp;</label>
+                  <label for="slide2">&nbsp;</label>
+                  <label for="slide3">&nbsp;</label>
+                  <label for="slide4">&nbsp;</label>
+                </div>
+              </div>
+              <p>안녕하세요, 저는 용문고등학교에 재학중인 진철호입니다.</p>
+              <p>저는 2학년 7반입니다.</p>
+              <p>야구(키움 팬) 좋아합니다.</p>
+              <p>MBTI : INTP-T</p>
+              <p>LCK 팬입니다</p>
+              <p>깃허브 링크 : https://github.com/jincheo</p>
+              <p>e-mail : jnho0704@naver.com</p>
+            </div>
+          </article>
+        </section>
+        <aside id="main-aside">
+          <div class="aside-list">
+            <h3>송중초</h3>
+            <ul>
+              <li><a href="#">1학년 8반</a></li>
+              <li><a href="#">2학년 3반</a></li>
+              <li><a href="#">3학년 ?반</a></li>
+              <li><a href="#">4학년 ?반</a></li>
+              <li><a href="#">5학년 1반</a></li>
+              <li><a href="#">6학년 3반</a></li>
+            </ul>
+          </div>
+          <div class="aside-list">
+            <h3>숭곡중</h3>
+            <ul>
+              <li><a href="#">1학년 7반</a></li>
+              <li><a href="#">2학년 5반</a></li>
+              <li><a href="#">3학년 4반</a></li>
+            </ul>
+          </div>
+          <div class="aside-list">
+            <h3>용문고</h3>
+            <ul>
+              <li><a href="#">1학년 11반</a></li>
+              <li><a href="#">2학년 7반</a></li>
+              <li><a href="#"></a>3학년 -반</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <footer id="main-footer">
+        <a href="https://github.com/woonsango">Created By 최선우</a>
+      </footer>
+    </div>
+  </body>
+</html>
